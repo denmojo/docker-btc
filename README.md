@@ -36,6 +36,18 @@ alias bitcoin-cli='docker exec -ti bitcoind bitcoin-cli'
 
 This allows you to just run bitcoin-cli as if it were local.
 
+To see what bitcoind is up to, less the debug log:
+`less /your/datadir/path/.bitcoin/debug.log`
+
+This is useful to watch when you stop bitcoind so that you are sure it has finished shutting down and saving state.
+
+## Stopping bitcoind
+Provided that you created the aliases above, just run:
+`bitcoin-cli stop`
+
+Otherwise if you want the docker command:
+`docker exec -ti bitcoind bitcoin-cli stop`
+
 ## Notes
 
 Since the blockchain download is up to 152+ GB as of Aug 2017, it will take you a while to download and verify your copy of the blockchain. Please account for storage.
