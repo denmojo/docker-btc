@@ -7,6 +7,7 @@ This project builds a Docker image with latest ubuntu release of bitcoind and bi
   * [Docker][1]
 
 ## Building
+  * cd to cloned directory
   * `docker build -t bitcoin .`
 
 ## Configuration
