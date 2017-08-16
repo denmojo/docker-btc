@@ -1,7 +1,7 @@
 denmojo/docker-btc
 =============
 
-This project builds a Docker image with latest ubuntu release of bitcoind and bitcoin-cli.
+This project builds a docker image with latest ubuntu release of bitcoind server and bitcoin-cli client. Run your own full bitcoin node with docker!
 
 ## Pre-requisites
   * [Docker][1]
