@@ -13,9 +13,9 @@ This project builds a Docker image with latest ubuntu release of bitcoind and bi
 
 Make a settings file bitcoin.conf.
 
-## Running zcash
+## Running bitcoind
 ```  
-	docker run --name bitcoind -d \
+   docker run --name bitcoind -d \
    --env 'BTC_RPCUSER=foo' \
    --env 'BTC_RPCPASSWORD=password' \
    --volume /your/custom/path:/bitcoin \
@@ -24,7 +24,7 @@ Make a settings file bitcoin.conf.
    bitcoin
 ```
 
-## Interacting with zcashd
+## Interacting with bitcoind
   * `docker exec -ti bitcoin bitcoin-cli -help`
 
 It might be helpful to set up aliases in your .bashrc or .zshrc
