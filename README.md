@@ -20,7 +20,7 @@ Make a settings file `bitcoin.conf` in the data directory of your choosing.
    --env 'BTC_RPCUSER=foo' \
    --env 'BTC_RPCPASSWORD=password' \
    --volume /your/datadir/path:/bitcoin \
-   --p 8332:8332 \
+   -p 8332:8332 \
    --publish 8333:8333 \
    bitcoin
 ```
